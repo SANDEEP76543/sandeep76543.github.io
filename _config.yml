@@ -1,3 +1,8 @@
 title: Sandeep's Portfolio & HSR Research
 description: Documenting India's High-Speed Rail projects | BEML B28 & more
 theme: minima   # start with GitHub's default theme (we'll upgrade later)
+header_pages:
+  - index.md        # or whatever your home file is
+  - About.md
+  - research.md
+  - contact.md
