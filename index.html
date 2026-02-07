@@ -474,3 +474,39 @@
 
   /* Add more sections as needed */
     </style>
+body {
+  margin: 0;
+  background: #000; /* fallback */
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Subtle train watermark */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('train-bg.jpg'); /* ← your uploaded filename here */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15; /* low for watermark feel — try 0.1 to 0.25 */
+  z-index: -2;
+}
+
+/* Dark overlay for readability */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.70); /* stronger tint = better text contrast */
+  z-index: -1;
+}
+
+/* Make sure header/nav/search stay on top & readable */
+header, .hero, .search-section {
+  position: relative;
+  z-index: 1;
+  background: rgba(13, 17, 23, 0.85); /* semi-transparent dark bg if needed */
+}
