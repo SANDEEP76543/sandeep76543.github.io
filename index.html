@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sandeep's HSR Research Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    a { color: #ff4d4d; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header / Nav */
+    header {
+      background: #1a1a1a;
+      border-bottom: 2px solid #ff4d4d;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 1rem 5%;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #ff4d4d;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover { color: #ff4d4d; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1511895243666-8e7e9e6b3e3e?auto=format&fit=crop&q=80') center/cover no-repeat;
+      height: 70vh;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    }
+    .hero-content p {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-btn {
+      background: #ff4d4d;
+      color: white;
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .cta-btn:hover {
+      background: #e63939;
+      transform: translateY(-3px);
+    }
+
+    /* Search Form (like Whoosh) */
+    .search-container {
+      background: #111;
+      padding: 3rem 5%;
+      text-align: center;
+    }
+    .search-box {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(255,77,77,0.15);
+    }
+    .search-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .input-group {
+      flex: 1;
+      min-width: 220px;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+    }
+    input, select { background: #222; color: white; }
+    button {
+      background: #ff4d4d;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover { background: #e63939; }
+
+    /* Sections */
+    .sections {
+      padding: 4rem 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    .section-card {
+      background: #111;
+      padding: 2rem;
+      border-radius: 12px;
+      border-left: 5px solid #ff4d4d;
+    }
+    .section-card h2 {
+      color: #ff4d4d;
+      margin-bottom: 1.5rem;
+    }
+    ul { list-style: none; }
+    ul li { margin: 1rem 0; font-size: 1.1rem; }
+
+    /* Footer */
+    footer {
+      background: #0d0d0d;
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #333;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .sections { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.5rem; }
+      .search-form { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Sandeep HSR</div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Research</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>India's High-Speed Rail Future</h1>
+      <p>Documenting BEML B28, Varanasi–Siliguri corridor & more — advancing rail technology & infrastructure</p>
+      <a href="https://sandeep76543.github.io/BEML-B28-HSR-RESEARCH" class="cta-btn">Explore Research Hub</a>
+    </div>
+  </section>
+
+  <section class="search-container">
+    <div class="search-box">
+      <h2 style="color:#ff4d4d; margin-bottom:1.5rem;">Quick Research Access</h2>
+      <form class="search-form">
+        <div class="input-group">
+          <input type="text" placeholder="Project / Corridor (e.g. BEML B28)" />
+        </div>
+        <div class="input-group">
+          <input type="text" placeholder="Keyword / Topic" />
+        </div>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="sections">
+    <div class="section-card">
+      <h2>Railway Research Highlights</h2>
+      <ul>
+        <li>BEML Train 28 (B28) — Design & Testing</li>
+        <li>Varanasi–Siliguri HSR Corridor Studies</li>
+        <li>Technical Documentation & Wikipedia Contributions</li>
+        <li>High-Speed Rail Technology Insights</li>
+      </ul>
+      <p><a href="https://sandeep76543.github.io/BEML-B28-HSR-RESEARCH">View Full Research →</a></p>
+    </div>
+
+    <div class="section-card">
+      <h2>About & Resources</h2>
+      <ul>
+        <li>Researcher Profile & Background</li>
+        <li>Latest Updates & News</li>
+        <li>Related Links & References</li>
+        <li>Contact for Collaboration</li>
+      </ul>
+      <p><a href="#">Learn More →</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Sandeep — High-Speed Rail Research Hub | Built with GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
